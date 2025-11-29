@@ -33,6 +33,7 @@ function M.on_attach(client, bufnr)
 
 	if client:supports_method("textDocument/codeAction") then
 		--require('lightbulb').attach_lightbulb(bufnr, client)
+		keymap("ga", vim.lsp.buf.code_action, "[G]oto Code [A]ction")
 	end
 
 	-- Don't check for the capability here to allow dynamic registration of the request.
