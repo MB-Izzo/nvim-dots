@@ -3,6 +3,9 @@ return {
 
 		"olimorris/codecompanion.nvim",
 		tag = "v17.33.0",
+		enabled = function()
+			return vim.env.MISTRAL_API_KEY ~= nil
+		end,
 		opts = {
 			adapter = "mistral",
 			strategies = {
