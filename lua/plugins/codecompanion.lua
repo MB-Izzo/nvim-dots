@@ -29,6 +29,7 @@ return {
 		},
 		dependencies = {
 			"nvim-lua/plenary.nvim",
+			-- to get a nice spinner while waiting for response
 			"franco-ruggeri/codecompanion-spinner.nvim",
 		},
 	},
