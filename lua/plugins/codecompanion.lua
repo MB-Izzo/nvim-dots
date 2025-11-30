@@ -6,7 +6,7 @@ return {
 		opts = {
 			strategies = {
 				chat = {
-					adapter = "gemini",
+					adapter = "mistral",
 					keymaps = {
 						send = {
 							modes = { n = "<CR>", i = "<CR>" },
