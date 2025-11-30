@@ -31,3 +31,4 @@ vim.keymap.set("n", "<leader>dv", function()
 		vim.cmd("DiffviewClose")
 	end
 end, { desc = "Diffview toggle" })
+vim.keymap.set({ "n", "v" }, "<leader>aa", "<cmd>CodeCompanionChat Toggle<cr>", { noremap = true, silent = true })
