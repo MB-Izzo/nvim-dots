@@ -9,6 +9,7 @@ return {
 			notify_no_formatters = false,
 			formatters_by_ft = {
 				c = { name = "clangd", timeout_ms = 500, lsp_format = "prefer" },
+				cpp = { name = "clangd", timeout_ms = 500, lsp_format = "prefer" },
 				go = { name = "gopls", timeout_ms = 500, lsp_format = "prefer" },
 				javascript = { "prettier", name = "dprint", timeout_ms = 500, lsp_format = "fallback" },
 				javascriptreact = { "prettier", name = "dprint", timeout_ms = 500, lsp_format = "fallback" },
