@@ -4,6 +4,7 @@ return {
 		"olimorris/codecompanion.nvim",
 		tag = "v17.33.0",
 		opts = {
+			adapter = "mistral",
 			strategies = {
 				chat = {
 					adapter = "mistral",
