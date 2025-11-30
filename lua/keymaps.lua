@@ -31,4 +31,15 @@ vim.keymap.set("n", "<leader>dv", function()
 		vim.cmd("DiffviewClose")
 	end
 end, { desc = "Diffview toggle" })
-vim.keymap.set({ "n", "v" }, "<leader>aa", "<cmd>CodeCompanionChat Toggle<cr>", { noremap = true, silent = true })
+vim.keymap.set(
+	{ "n", "v" },
+	"<leader>aa",
+	"<cmd>CodeCompanionChat Toggle<cr>",
+	{ noremap = true, silent = true, desc = "Toggle code companion chat" }
+)
+vim.keymap.set(
+	{ "n", "v" },
+	"<leader>ae",
+	"<cmd>CodeCompanion /explain<cr>",
+	{ noremap = true, silent = true, desc = "Explain selected code" }
+)
