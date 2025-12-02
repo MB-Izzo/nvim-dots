@@ -32,7 +32,7 @@ vim.keymap.set("n", "<leader>dv", function()
 	end
 end, { desc = "Diffview toggle" })
 
-if vim.env.MISTRAL_API_KEY ~= nil then
+if vim.env.MISTRAL_API_KEY ~= nil or vim.env.COPILOT_API_KEY ~= nil then
 	vim.keymap.set(
 		{ "n", "v" },
 		"<leader>aa",
