@@ -17,6 +17,7 @@ return {
 		end,
 		opts = {
 			adapter = get_codecompanion_adapter(),
+            model = "claude-sonnet-4",
 			strategies = {
 				chat = {
 					adapter = get_codecompanion_adapter(),
